@@ -1,2 +1,2 @@
 # ooad
--REPO for OOAD Module
+-REPO for OOAD
