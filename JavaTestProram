@@ -1,5 +1,5 @@
-public class JavaTestProgram {
+public class JavaTestProram {
 public static void main(String()args){
-        print("Maatla is the goat")
+        print("Maatla is the goat");
     }
 }
