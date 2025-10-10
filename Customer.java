@@ -17,6 +17,7 @@ public abstract class Customer {
         comp.requestOpenAccount("Business", 5000.0);
     }
 }
+
 class IndividualCustomer extends Customer {
     private final String firstName;
     private final String surname;
