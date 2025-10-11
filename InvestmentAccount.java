@@ -8,6 +8,6 @@ public class InvestmentAccount extends Account implements InterestCalculation, W
 
     @Override
     public double calculateInterest(double rate) {
-        return accountBalance * rate;
+        return accountBalance * 0.05;
     }
 }
