@@ -1,6 +1,6 @@
 public class Teller {
-    private final String employeeID;
-    private final String name;
+    private String employeeID;
+    private String name;
 
     public Teller(String employeeID, String name) {
         this.employeeID = employeeID;
