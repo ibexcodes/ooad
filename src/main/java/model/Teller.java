@@ -1,3 +1,5 @@
+package model;
+
 public class Teller {
     private String employeeID;
     private String name;

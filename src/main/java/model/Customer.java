@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Customer {
     protected int customerID;
     protected String address;

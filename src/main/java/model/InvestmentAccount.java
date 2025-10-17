@@ -1,3 +1,5 @@
+package  model;
+
 public class InvestmentAccount extends Account implements InterestCalculation, Withdrawal {
     @Override
     public void withdraw(double amount) {

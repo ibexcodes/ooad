@@ -1,3 +1,5 @@
+package model;
+
 public class ChequeAccount extends Account implements Withdrawal {
     private String companyName;
     private String companyAddress;
