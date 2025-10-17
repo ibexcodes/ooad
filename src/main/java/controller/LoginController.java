@@ -1,0 +1,32 @@
+package controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
+public class LoginController {
+
+    @FXML
+    private TextField usernameField;
+
+    @FXML
+    private PasswordField passwordField;
+
+    @FXML
+    private Button loginButton;
+
+    @FXML
+    private void handleLogin() {
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+
+        // Basic login logic (for demonstration)
+        if ("admin".equals(username) && "password".equals(password)) {
+            System.out.println("Login successful!");
+            // TODO: Navigate to main application scene
+        } else {
+            System.out.println("Login failed!");
+        }
+    }
+}
