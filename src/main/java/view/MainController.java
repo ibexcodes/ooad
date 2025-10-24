@@ -1,3 +1,5 @@
+package view;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,7 +41,7 @@ public class MainController implements Initializable {
         transition.play();
         transition.setOnFinished(e -> {
             try {
-                fxml = FXMLLoader.load(getClass().getResource(fxmlFile));
+                fxml = FXMLLoader.load(getClass().getResource("/" + fxmlFile));
                 vbox.getChildren().clear();
                 vbox.getChildren().setAll(fxml);
             } catch (IOException ex) {
