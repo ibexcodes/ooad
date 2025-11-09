@@ -4,7 +4,6 @@ model/Customer.class
 model/InterestCalculation.class
 model/CompanyCustomer.class
 model/InvestmentAccount.class
-JavaCodespaceTest.class
 model/SavingsAccount.class
 view/MainController.class
 model/Withdrawal.class
