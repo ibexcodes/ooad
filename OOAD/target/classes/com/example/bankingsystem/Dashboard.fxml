@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-9.0" layoutY="-15.0" prefHeight="675.0" prefWidth="1171.0" />
+      <ImageView fitHeight="737.0" fitWidth="1161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../your_paragraph_text-1(1).jpg" />
+         </image>
+      </ImageView>
+      <Pane id="Mainpane" layoutX="253.0" layoutY="233.0" prefHeight="381.0" prefWidth="872.0">
+         <children>
+            <TextField fx:id="depositField" layoutX="51.0" layoutY="90.0" prefHeight="26.0" prefWidth="202.0" promptText="Amount" />
+            <Button layoutX="94.0" layoutY="177.0" onAction="#handleDeposit" prefHeight="33.0" prefWidth="97.0" styleClass="bluebtn" stylesheets="@styles.css" text="Deposit" />
+            <Button layoutX="641.0" layoutY="184.0" onAction="#handleWithdraw" prefHeight="33.0" prefWidth="113.0" styleClass="bluebtn" stylesheets="@styles.css" text="Withdraw" />
+            <TextField fx:id="withdrawField" layoutX="617.0" layoutY="90.0" prefHeight="26.0" prefWidth="161.0" promptText="Amount" />
+            <Button layoutX="338.0" layoutY="295.0" onAction="#handleApplyInterest" prefHeight="42.0" prefWidth="129.0" styleClass="bluebtn" stylesheets="@styles.css" text="Apply Interest" />
+            <Text fill="#446fc7" layoutX="52.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEPOSIT AMOUNT">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="#446fc7" layoutX="617.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WITHDRAWAL">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="253.0" layoutY="67.0" prefHeight="135.0" prefWidth="279.0">
+         <children>
+            <ListView fx:id="InvestmentAccountdetalis" layoutY="-2.0" prefHeight="135.0" prefWidth="279.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="550.0" layoutY="67.0" prefHeight="135.0" prefWidth="279.0">
+         <children>
+            <ListView fx:id="SavingsAccountdetails" prefHeight="135.0" prefWidth="279.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="846.0" layoutY="67.0" prefHeight="135.0" prefWidth="279.0">
+         <children>
+            <ListView fx:id="chequeAccountdetails" orientation="HORIZONTAL" prefHeight="135.0" prefWidth="279.0" />
+         </children>
+      </Pane>
+      <Text fill="#446fc7" layoutX="656.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       CUSTOMER   DASHBOARD" wrappingWidth="380.0579833984375">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button layoutX="32.0" layoutY="161.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" styleClass="tf" stylesheets="@styles.css" text="menu" textFill="#171616">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="33.0" layoutY="285.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" styleClass="tf" stylesheets="@styles.css" text="openAccount">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="29.0" layoutY="396.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="176.0" styleClass="tf" stylesheets="@styles.css" text="Transactionhistory">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="32.0" layoutY="526.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="170.0" styleClass="tf" stylesheets="@styles.css" text="customer Profile">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="42.0" layoutY="588.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" styleClass="tf" stylesheets="@styles.css" text="Sign out" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
