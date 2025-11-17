@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="458.0" styleClass="Blue-pane1" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingsystem.LoginController">
+    <Label text="Login" textFill="#2196f3" VBox.vgrow="ALWAYS">
+        <VBox.margin>
+            <Insets left="20.0" />
+        </VBox.margin>
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+    <HBox prefHeight="27.0" prefWidth="374.0" stylesheets="@styles.css">
+        <VBox.margin>
+            <Insets left="20.0" right="15.0" top="15.0" />
+        </VBox.margin>
+        <TextField fx:id="emailField" prefHeight="27.0" prefWidth="412.0" promptText="Email" styleClass="tfbox">
+            <HBox.margin>
+                <Insets right="6.0" />
+            </HBox.margin></TextField>
+        <ImageView fitHeight="23.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@user.png" />
+        </ImageView>
+    </HBox>
+    <HBox layoutX="10.0" layoutY="197.0" prefHeight="30.0" prefWidth="427.0" stylesheets="@styles.css">
+        <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+        </VBox.margin>
+        <PasswordField fx:id="passwordField" prefHeight="26.0" prefWidth="410.0" promptText="Password" styleClass="tfbox" stylesheets="@styles.css">
+            <HBox.margin>
+                <Insets left="4.0" right="4.0" />
+            </HBox.margin>
+        </PasswordField>
+        <ImageView fitHeight="27.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@padlock.png" />
+        </ImageView>
+    </HBox>
+    <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="31.0" prefWidth="404.0" styleClass="bluebtn" stylesheets="@styles.css" text="Sign In" textFill="WHITE" VBox.vgrow="ALWAYS">
+        <VBox.margin>
+            <Insets left="17.0" top="8.0" />
+        </VBox.margin>
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
+    <Button mnemonicParsing="false" onAction="#handleForgotPassword" styleClass="tf" stylesheets="@styles.css" text="Forgot Password?" textFill="#f5f4f4">
+        <VBox.margin>
+            <Insets left="300.0" />
+        </VBox.margin>
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </Button>
+</VBox>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="1030.0" styleClass="Blue-pane1" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="375.0" layoutY="-3.0" text="Customer Profile" textAlignment="CENTER" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <GridPane hgap="10.0" layoutX="145.0" layoutY="45.0" prefHeight="422.0" prefWidth="497.0" vgap="10.0">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <Label text="Full Name:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="fullName" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Date of Birth:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="dateOfBirth" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Gender:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="gender" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="National ID:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="nationalId" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Contact Number:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="contactNumber" editable="false" prefHeight="26.0" prefWidth="3.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Email Address:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id="emailAddress" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Residential Address:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="residentialAddress" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Next of Kin:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextField fx:id="nextOfKin" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Occupation:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <TextField fx:id="occupation" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="companyNameLabel" text="Company Name:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <TextField fx:id="companyName" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="companyRegIdLabel" text="Company Registration ID:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+            <TextField fx:id="companyRegistrationId" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label fx:id="dateEstLabel" text="Date of Establishment:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+            <TextField fx:id="dateOfEstablishment" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</Pane>
